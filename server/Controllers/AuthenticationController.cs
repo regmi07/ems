@@ -27,7 +27,6 @@ namespace server.Controllers{
             if(token == null) return BadRequest("Model is empty!");
             var result = await accountInterface.RefreshTokenAsync(token);
             return Ok(result);
-
         }
     }
 }
